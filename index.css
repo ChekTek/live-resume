@@ -7,9 +7,44 @@ address{
     font-size: x-small;
 }
 
+address div.address-entry{
+    display: flex;
+}
+
 span.light{
     font-weight: 300;
 }
 
 h1{
+    font-size: 3em;
+    text-align: center;
+}
+
+h2{
+    font-size: 2.25em;
+    color: steelblue;
+    text-align: center;
+    font-weight: 900;
+}
+
+h3{
+    font-weight: lighter;
+    font-size: 1.68em;
+}
+
+h4{
+    font-size: .85em;
+}
+
+ul{
+    font-size: .8em;
+    font-family: open-sans;
+}
+
+.color-secondary{
+    color:lightslategray;
+}
+
+section{
+    margin-bottom: 50px;
 }
