@@ -17,13 +17,11 @@ span.light{
 
 h1{
     font-size: 3em;
-    text-align: center;
 }
 
 h2{
     font-size: 2.25em;
     color: steelblue;
-    text-align: center;
     font-weight: 900;
 }
 
@@ -41,10 +39,69 @@ ul{
     font-family: open-sans;
 }
 
+li{
+    list-style: none;
+}
+
 .color-secondary{
     color:lightslategray;
 }
 
 section{
     margin-bottom: 50px;
+}
+
+#resume{
+    display: grid;
+    grid-template-areas: 
+    'header header address'
+    'education education education'
+    'work work work'
+    'stack stack links'
+    'volunteer volunteer volunteer'
+    'footer footer footer';
+}
+
+header{
+    grid-area: header
+}
+
+#education{
+    grid-area: education;
+}
+
+#work{
+    grid-area: work;
+}
+
+#stack{
+    grid-area: stack;
+}
+
+#volunteer{
+    grid-area: volunteer;
+}
+
+#links{
+    grid-area: links;
+}
+
+footer{
+    grid-area: footer;
+}
+
+address{
+    grid-area: address;
+    align-self: center;
+}
+
+
+address a{
+    white-space: nowrap;
+}
+
+address img{
+    max-height: 10px;
+    vertical-align: middle;
+    margin-right: 1px;
 }
