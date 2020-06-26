@@ -3,20 +3,13 @@ body{
     min-width: 300px;
 }
 
-address{
-    font-size: x-small;
-}
-
-address div.address-entry{
-    display: flex;
-}
-
 span.light{
     font-weight: 300;
 }
 
 h1{
     font-size: 3em;
+    width: 100%;
 }
 
 h2{
@@ -54,12 +47,19 @@ section{
 #resume{
     display: grid;
     grid-template-areas: 
-    'header header address'
-    'education education education'
-    'work work work'
-    'stack stack links'
-    'volunteer volunteer volunteer'
-    'footer footer footer';
+    'header'
+    'education'
+    'work'
+    'stack'
+    'links'
+    'volunteer'
+    'footer';
+    justify-items: center;
+}
+
+#resume article{
+    width: 100%;
+    max-width: 90%
 }
 
 header{
@@ -88,20 +88,4 @@ header{
 
 footer{
     grid-area: footer;
-}
-
-address{
-    grid-area: address;
-    align-self: center;
-}
-
-
-address a{
-    white-space: nowrap;
-}
-
-address img{
-    max-height: 10px;
-    vertical-align: middle;
-    margin-right: 1px;
 }
